@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
+import Preloader from '@/components/Preloader';
+import SmoothScroll from '@/components/SmoothScroll';
 
 export const metadata: Metadata = {
   title: 'Faraz Mehmood | Full Stack Software Engineer · Flutter & Web Development',
@@ -47,6 +49,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet"
+        />
         <link rel="icon" href="/icon.svg?v=5" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico?v=5" sizes="any" />
         <link rel="icon" href="/icon.png?v=5" type="image/png" sizes="32x32" />
@@ -54,6 +62,12 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon-192.png?v=5" />
       </head>
       <body>
+        {/* Luxury Momentum Smooth Scroll */}
+        <SmoothScroll />
+
+        {/* Initial Loading Page / Splash Preloader */}
+        <Preloader />
+
         {/* Custom Interactive Glowing Cursor */}
         <CustomCursor />
 

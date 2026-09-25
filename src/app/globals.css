@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Great+Vibes&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root {
   /* Tatheer.dev Exact Color Palette */
@@ -21,9 +21,9 @@
   --border-card: rgba(255, 255, 255, 0.1);
   --border-hover: rgba(0, 95, 234, 0.45);
 
-  /* Typography */
-  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Typography - Modern Elite Engineering Stack */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-script: 'Great Vibes', cursive;
   --font-mono: 'JetBrains Mono', monospace;
 
@@ -66,6 +66,46 @@ html {
   scroll-behavior: smooth;
   color-scheme: dark;
   background-color: var(--black);
+  scrollbar-width: none; /* Firefox: completely hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar completely across Chrome, Safari, Edge, Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+
+/* Fallback: If a browser or OS ever forces scrollbar rendering, blend it seamlessly with same black color */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #0d121f var(--black);
+}
+
+/* Lenis Luxury Smooth Scroll Core Integration */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }
 
 /* Hide default OS/browser mouse cursor on desktop so only custom cursor is visible */
@@ -88,6 +128,16 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
 
 
 /* Deep Royal Blue Ambient Spotlight in Center */
@@ -103,17 +153,17 @@ body {
   z-index: 0;
 }
 
-/* Master Layout (Exact tatheer.dev viewport grid) */
+/* Master Layout (Full width grid with generous between-spacing) */
 .portfolio-layout {
   display: flex;
   align-items: flex-start;
   min-height: 100vh;
   position: relative;
   width: 100%;
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 28px 36px 60px 28px;
-  gap: 0;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 24px 36px 60px 28px;
+  gap: clamp(140px, 12vw, 280px);
   z-index: 2;
 }
 
@@ -140,15 +190,16 @@ body {
   z-index: 50;
 }
 
-/* Right Main Stream Container  */
+/* Right Main Stream Container - Expands to Right End with Generous Breathing Space */
 .main-stream {
   flex: 1;
   min-width: 0;
+  width: 100%;
+  max-width: none;
   position: relative;
   z-index: 2;
-  padding-left: clamp(80px, 9vw, 150px);
-  padding-right: 32px;
-  max-width: 1080px;
+  padding-left: 0;
+  padding-right: clamp(40px, 5vw, 90px);
 }
 
 .left-sidebar:hover {
@@ -852,6 +903,8 @@ body {
 @media (max-width: 992px) {
   .portfolio-layout {
     flex-direction: column;
+    gap: 40px;
+    padding: 20px 16px;
   }
 
   .left-sidebar {

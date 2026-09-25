@@ -25,28 +25,34 @@
 
 .accordionWrap {
   margin-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .accordionItem {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 24px 8px;
+  background: rgba(14, 20, 32, 0.5);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px 24px;
   cursor: pointer;
-  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
 }
 
 .accordionItem:hover {
-  background: rgba(255, 255, 255, 0.015);
-  border-color: rgba(0, 95, 234, 0.35);
-  padding-left: 14px;
-  padding-right: 14px;
+  background: rgba(18, 26, 44, 0.68);
+  border-color: rgba(0, 95, 234, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 95, 234, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
 }
 
 .accordionItemActive {
-  background: rgba(0, 95, 234, 0.04);
-  border-color: rgba(0, 95, 234, 0.4);
-  padding-left: 14px;
-  padding-right: 14px;
+  background: rgba(0, 95, 234, 0.08);
+  border-color: rgba(0, 95, 234, 0.45);
+  box-shadow: 0 12px 35px rgba(0, 95, 234, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .accordionHead {

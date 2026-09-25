@@ -5,11 +5,13 @@ export interface Project {
   category: 'Mobile' | 'Web' | 'Full-Stack';
   techStack: string[];
   imageUrl: string;
-  demoUrl: string;
+  demoUrl?: string;
   githubUrl: string;
   isFeatured: boolean;
   metrics?: string;
   year?: string;
+  isRepoPublished?: boolean;
+  isDemoPublished?: boolean;
 }
 
 export interface Skill {
@@ -47,15 +49,15 @@ export interface Certification {
 export const portfolioData = {
   personal: {
     name: 'Faraz Mehmood',
-    title: 'Software Engineer',
+    title: 'Full Satck Software Engineer',
     roleTagline: 'Engineering Scalable Mobile Apps & Modern Web Experiences',
     statusBadge: 'Available for New Projects & Roles',
     location: 'Kohat, Pakistan',
-    phone: '+92 315-4236363',
+    phone: '+92 333-9097637',
     email: 'farazmehmood003@gmail.com',
     experienceYears: '1.5+ Years',
     avatarUrl: '/images/faraz_avatar.jpg',
-    resumeUrl: '#',
+    resumeUrl: '/Faraz_Mehmood_Resume.pdf',
     bio: 'Software Engineer specializing in cross-platform mobile apps (Flutter, Dart, Provider, MVVM, SQLite) and modern full-stack web applications (React 18, Next.js 14, TypeScript, Tailwind CSS) with robust cloud backends (Firebase & Supabase).',
     aboutExtended: [
       'Graduated with a Bachelor of Science in Computer Science from Kohat University of Science & Technology (2020–2024), actively developing production mobile applications at LogicCraft Technologies using Flutter, Dart, and clean MVVM architecture.',
@@ -66,7 +68,7 @@ export const portfolioData = {
   socials: {
     github: 'https://github.com/farazmehmood99',
     linkedin: 'https://linkedin.com/in/faraz-mehmood-808046360',
-    whatsapp: 'https://wa.me/923154236363?text=Hi%20Faraz,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20collaborate.',
+    whatsapp: 'https://wa.me/923339097637?text=Hi%20Faraz,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20collaborate.',
     twitter: 'https://twitter.com',
   },
 
@@ -81,7 +83,7 @@ export const portfolioData = {
     {
       id: 'mobile-dev',
       title: 'Flutter Mobile Engineering',
-      description: 'Production-ready iOS and Android apps with 60fps Flutter UI, clean MVVM architecture, Provider state management, and offline SQLite caching.',
+      description: 'Production-ready iOS and Android apps with high-performance Flutter UI, clean MVVM architecture, Provider state management, and offline SQLite caching.',
       technologies: ['Flutter', 'Dart', 'Provider', 'MVVM', 'SQLite', 'Play Store'],
       color: 'var(--primary)',
     },
@@ -121,6 +123,10 @@ export const portfolioData = {
     { name: 'HTML5 & CSS3 / Tailwind', category: 'Frontend', level: 'Advanced', proficiency: 90, iconName: 'css', color: '#E34F26' },
     { name: 'C++ & OOP', category: 'Tools', level: 'Intermediate', proficiency: 80, iconName: 'code', color: '#00599C' },
     { name: 'Java', category: 'Tools', level: 'Intermediate', proficiency: 75, iconName: 'code', color: '#EA2D2E' },
+    { name: 'VS Code', category: 'Tools', level: 'Advanced', proficiency: 95, iconName: 'vscode', color: '#007ACC' },
+    { name: 'Android Studio', category: 'Tools', level: 'Advanced', proficiency: 92, iconName: 'androidstudio', color: '#3DDC84' },
+    { name: 'Git & GitHub', category: 'Tools', level: 'Advanced', proficiency: 90, iconName: 'git', color: '#F05032' },
+    { name: 'Postman', category: 'Tools', level: 'Intermediate', proficiency: 85, iconName: 'postman', color: '#FF6C37' },
   ] as Skill[],
 
   projects: [
@@ -131,11 +137,13 @@ export const portfolioData = {
       category: 'Mobile',
       techStack: ['Flutter', 'Firebase Firestore', 'Firebase Auth', 'Supabase Storage'],
       imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80',
-      demoUrl: 'https://github.com/farazmehmood99/Tenant_Links',
+      demoUrl: '',
       githubUrl: 'https://github.com/farazmehmood99/Tenant_Links',
       isFeatured: true,
-      metrics: '2026 Production Build · Real-Time Sync',
+      metrics: 'Active Repo: Tenant_Links · 2026',
       year: '2026',
+      isRepoPublished: true,
+      isDemoPublished: false,
     },
     {
       id: 'rentmate',
@@ -144,11 +152,28 @@ export const portfolioData = {
       category: 'Mobile',
       techStack: ['Flutter', 'Dart', 'Provider', 'Firebase Firestore'],
       imageUrl: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=900&q=80',
-      demoUrl: 'https://github.com/farazmehmood99/RentMate1',
+      demoUrl: '',
       githubUrl: 'https://github.com/farazmehmood99/RentMate1',
       isFeatured: true,
-      metrics: 'Active GitHub Repository: RentMate1',
+      metrics: 'Active Repo: RentMate1 · 2025',
       year: '2025',
+      isRepoPublished: true,
+      isDemoPublished: false,
+    },
+    {
+      id: 'faraz-portfolio',
+      title: 'Faraz Portfolio — Modern Engineering Showcase',
+      description: 'High-performance interactive developer portfolio engineered with React 18, Next.js 14 App Router, TypeScript, and modern modular CSS with dark glassmorphism and GSAP micro-animations.',
+      category: 'Web',
+      techStack: ['Next.js 14', 'React 18', 'TypeScript', 'GSAP', 'CSS Modules'],
+      imageUrl: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=900&q=80',
+      demoUrl: '',
+      githubUrl: 'https://github.com/farazmehmood99/Faraz_Protfolio',
+      isFeatured: true,
+      metrics: 'Active Repo: Faraz_Protfolio · 2026',
+      year: '2026',
+      isRepoPublished: true,
+      isDemoPublished: false,
     },
     {
       id: 'bidding-application',
@@ -157,11 +182,13 @@ export const portfolioData = {
       category: 'Mobile',
       techStack: ['Flutter', 'Provider', 'Firebase Firestore', 'Supabase Storage', 'Auth'],
       imageUrl: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=900&q=80',
-      demoUrl: 'https://github.com/farazmehmood99',
+      demoUrl: '',
       githubUrl: 'https://github.com/farazmehmood99',
       isFeatured: true,
       metrics: 'Dual Interfaces: User & Admin Panel',
       year: '2025',
+      isRepoPublished: false,
+      isDemoPublished: false,
     },
     {
       id: 'kovue-coffee',
@@ -170,11 +197,13 @@ export const portfolioData = {
       category: 'Mobile',
       techStack: ['Flutter', 'Firebase', 'State Management', 'Geolocation Tracking'],
       imageUrl: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&q=80',
-      demoUrl: 'https://github.com/farazmehmood99',
+      demoUrl: '',
       githubUrl: 'https://github.com/farazmehmood99',
       isFeatured: true,
       metrics: '4 Dedicated Portals (Customer, Seller, Rider, Admin)',
       year: '2024',
+      isRepoPublished: false,
+      isDemoPublished: false,
     },
     {
       id: 'weather-application',
@@ -183,11 +212,13 @@ export const portfolioData = {
       category: 'Mobile',
       techStack: ['Flutter', 'Dart', 'REST API (HTTP)', 'JSON Serialization'],
       imageUrl: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=900&q=80',
-      demoUrl: 'https://github.com/farazmehmood99',
+      demoUrl: '',
       githubUrl: 'https://github.com/farazmehmood99',
       isFeatured: true,
       metrics: 'Real-time HTTP REST API Integration',
       year: '2025',
+      isRepoPublished: false,
+      isDemoPublished: false,
     },
     {
       id: 'todo-application',
@@ -196,24 +227,13 @@ export const portfolioData = {
       category: 'Mobile',
       techStack: ['Flutter', 'Firebase Firestore', 'Authentication', 'Supabase'],
       imageUrl: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=900&q=80',
-      demoUrl: 'https://github.com/farazmehmood99',
+      demoUrl: '',
       githubUrl: 'https://github.com/farazmehmood99',
       isFeatured: false,
       metrics: 'Cloud Firestore & Supabase Integration',
       year: '2025',
-    },
-    {
-      id: 'saas-web-platform',
-      title: 'Full-Stack Modern Web Platform',
-      description: 'High-performance responsive web platform engineered with React 18, Next.js 14 App Router, TypeScript, and Tailwind CSS. Showcasing full-stack capabilities cultivated at Arfa Karim Technology Incubator.',
-      category: 'Web',
-      techStack: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS'],
-      imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80',
-      demoUrl: 'https://github.com/farazmehmood99',
-      githubUrl: 'https://github.com/farazmehmood99',
-      isFeatured: false,
-      metrics: 'Next.js 14 App Router & Sub-Second LCP',
-      year: '2026',
+      isRepoPublished: false,
+      isDemoPublished: false,
     },
   ] as Project[],
 
@@ -243,7 +263,7 @@ export const portfolioData = {
     {
       step: '02',
       title: 'Pixel-Perfect UI/UX Implementation',
-      desc: 'Developing 60fps Flutter user interfaces and responsive layouts adhering to certified UI/UX principles.',
+      desc: 'Developing high-performance Flutter user interfaces and responsive layouts adhering to certified UI/UX principles.',
     },
     {
       step: '03',
@@ -285,6 +305,13 @@ export const portfolioData = {
       highlights: [
         'Core studies in Pre-Engineering, Mathematics, Physics, and analytical logic.',
       ],
+    },
+    {
+      degree: 'Secondary School',
+      institution: 'Working Folks Grammar School Kohat-1',
+      period: '2015 – 2017',
+      status: 'Completed',
+      highlights: ['Matriculation in Science with distinguished academic record.'],
     },
   ] as Education[],
 

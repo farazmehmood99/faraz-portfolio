@@ -21,7 +21,7 @@ export default function Services() {
       title: 'Mobile App Development',
       icon: <Smartphone size={20} />,
       details: [
-        'Single codebase multi-platform architectures with 60fps Flutter UI',
+        'Single codebase multi-platform architectures with high-performance Flutter UI',
         'Robust state management with Bloc / Riverpod and clean layer separation',
         'Offline-first synchronization with SQLite, Hive, and REST background tasks',
         'Full deployment lifecycle to Google Play Store & Apple App Store',

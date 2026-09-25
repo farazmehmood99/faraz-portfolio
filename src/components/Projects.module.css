@@ -5,20 +5,23 @@
 
 /* Showcase CTA Card (tatheer.dev style) */
 .ctaCard {
-  background: linear-gradient(135deg, rgba(14, 18, 28, 0.95) 0%, rgba(8, 11, 18, 0.98) 100%);
+  background: rgba(14, 20, 32, 0.58);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 28px;
   padding: 40px;
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
   transition: all 0.3s ease;
 }
 
 .ctaCard:hover {
-  border-color: rgba(0, 95, 234, 0.4);
-  box-shadow: 0 20px 60px rgba(0, 95, 234, 0.2);
+  background: rgba(18, 26, 44, 0.72);
+  border-color: rgba(0, 95, 234, 0.45);
+  box-shadow: 0 24px 60px rgba(0, 95, 234, 0.22), inset 0 1px 0 0 rgba(255, 255, 255, 0.18);
 }
 
 .ctaPill {
@@ -110,20 +113,24 @@
 }
 
 .projectCard {
-  background: linear-gradient(135deg, rgba(14, 18, 28, 0.8) 0%, rgba(8, 11, 18, 0.9) 100%);
+  background: rgba(14, 20, 32, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 22px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease;
 }
 
 .projectCard:hover {
-  border-color: rgba(0, 95, 234, 0.4);
+  background: rgba(18, 26, 44, 0.72);
+  border-color: rgba(0, 95, 234, 0.45);
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0, 95, 234, 0.15);
+  box-shadow: 0 16px 40px rgba(0, 95, 234, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
 
 .cardHeader {
@@ -180,23 +187,30 @@
 }
 
 .cardActions {
-  display: flex;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 8px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding-top: 16px;
+  width: 100%;
 }
 
 .demoBtn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
-  font-size: 0.88rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
   background: #005fea;
-  padding: 6px 14px;
+  padding: 7px 8px;
   border-radius: 8px;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
   transition: all 0.2s ease;
 }
 
@@ -205,37 +219,111 @@
   box-shadow: 0 4px 14px rgba(0, 95, 234, 0.4);
 }
 
-.codeBtn {
-  display: inline-flex;
+.notPublishedBtn {
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
-  font-size: 0.88rem;
-  color: #8b9bb4;
-  text-decoration: none;
-  padding: 6px 14px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.08);
+  border: 1px solid rgba(251, 191, 36, 0.22);
+  padding: 7px 8px;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  transition: all 0.2s ease;
+  user-select: none;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+.notPublishedBtn:hover {
+  background: rgba(251, 191, 36, 0.14);
+  border-color: rgba(251, 191, 36, 0.4);
+}
+
+.statusDotAmber {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fbbf24;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.8);
+  display: inline-block;
+  animation: pulseAmber 2.2s infinite ease-in-out;
+}
+
+@keyframes pulseAmber {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.85);
+  }
+}
+
+.codeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 7px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 95, 234, 0.35);
+  background: rgba(0, 95, 234, 0.08);
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
 }
 
 .codeBtn:hover {
   color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.04);
+  border-color: #005fea;
+  background: rgba(0, 95, 234, 0.22);
+  box-shadow: 0 4px 14px rgba(0, 95, 234, 0.28);
+  transform: translateY(-1px);
 }
 
-.demoUnavailableBtn {
-  display: inline-flex;
+.codeArrow {
+  opacity: 0.7;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.codeBtn:hover .codeArrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+.repoPendingBtn {
+  display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.82rem;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.76rem;
   font-weight: 500;
-  color: #728096;
-  background: rgba(255, 255, 255, 0.03);
-  padding: 6px 12px;
+  color: #94a3b8;
+  text-decoration: none;
+  padding: 7px 8px;
   border-radius: 8px;
-  border: 1px dashed rgba(255, 255, 255, 0.12);
-  cursor: not-allowed;
-  user-select: none;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.02);
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.repoPendingBtn:hover {
+  color: #e2e8f0;
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.05);
 }
 

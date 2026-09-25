@@ -2,7 +2,15 @@
 
 import React from 'react';
 import { portfolioData } from '@/data/portfolioData';
-import { GraduationCap, Terminal, CheckCircle2, Award } from 'lucide-react';
+import { 
+  GraduationCap, 
+  Award, 
+  Code2, 
+  Layers, 
+  Zap, 
+  Database, 
+  Cloud 
+} from 'lucide-react';
 import styles from './About.module.css';
 
 export default function About() {
@@ -13,43 +21,71 @@ export default function About() {
         Engineering Scalable Mobile Apps & Practical Full-Stack Solutions
       </h2>
       <p className={styles.lead}>
-        I am Faraz Mehmood, a Flutter & Mobile Application Developer based in Kohat, Pakistan. Currently developing production applications at LogicCraft Technologies and expanding into full-stack web engineering at Arfa Karim Technology Incubator. My approach prioritizes clean MVVM architecture, 60fps native feel, offline SQLite persistence, and reliable cloud sync with Firebase & Supabase.
+        I am Faraz Mehmood, a Flutter & Mobile Application Developer based in Kohat, Pakistan. Currently developing production applications at LogicCraft Technologies and expanding into full-stack web engineering at Arfa Karim Technology Incubator. My approach prioritizes clean MVVM architecture, smooth native feel, offline SQLite persistence, and reliable cloud sync with Firebase & Supabase.
       </p>
 
       <div className={styles.bentoGrid}>
-        {/* Story & Philosophy */}
+        {/* Core Capabilities Card - Replaces repetitive text with actionable strengths */}
         <div className={styles.bentoCard}>
           <div>
             <div className={styles.cardHeader}>
-              <Terminal size={20} color="#005fea" />
-              <h3 className={styles.cardTitle}>Engineering Principles & Experience</h3>
+              <div className={styles.iconBox}>
+                <Code2 size={22} />
+              </div>
+              <div>
+                <span className={styles.sublabel}>Core Competencies</span>
+                <h3 className={styles.cardTitle}>Engineering Capabilities</h3>
+              </div>
             </div>
 
-            <p className={styles.paragraph}>
-              {portfolioData.personal.aboutExtended[0]}
-            </p>
+            <div className={styles.capabilitiesList}>
+              <div className={styles.capabilityItem}>
+                <div className={styles.capabilityIconWrap}>
+                  <Layers size={18} color="#005fea" />
+                </div>
+                <div>
+                  <h4 className={styles.capabilityTitle}>Clean MVVM Architecture</h4>
+                  <p className={styles.capabilityDesc}>
+                    Scalable, testable code structure with Provider state management and modular separation of concerns.
+                  </p>
+                </div>
+              </div>
 
-            <p className={styles.paragraph}>
-              {portfolioData.personal.aboutExtended[1]}
-            </p>
-          </div>
+              <div className={styles.capabilityItem}>
+                <div className={styles.capabilityIconWrap}>
+                  <Zap size={18} color="#00d2ff" />
+                </div>
+                <div>
+                  <h4 className={styles.capabilityTitle}>High-Performance Mobile UI</h4>
+                  <p className={styles.capabilityDesc}>
+                    Jank-free Flutter rendering, fluid animations, and responsive layouts across iOS & Android devices.
+                  </p>
+                </div>
+              </div>
 
-          <div className={styles.principlesGrid}>
-            <div className={styles.principleItem}>
-              <CheckCircle2 size={15} color="#005fea" />
-              <span>60 FPS Native UI</span>
-            </div>
-            <div className={styles.principleItem}>
-              <CheckCircle2 size={15} color="#005fea" />
-              <span>Offline-First SQLite</span>
-            </div>
-            <div className={styles.principleItem}>
-              <CheckCircle2 size={15} color="#005fea" />
-              <span>MVVM & Provider</span>
-            </div>
-            <div className={styles.principleItem}>
-              <CheckCircle2 size={15} color="#005fea" />
-              <span>Firebase & Supabase</span>
+              <div className={styles.capabilityItem}>
+                <div className={styles.capabilityIconWrap}>
+                  <Database size={18} color="#3ECF8E" />
+                </div>
+                <div>
+                  <h4 className={styles.capabilityTitle}>Offline-First SQLite Persistence</h4>
+                  <p className={styles.capabilityDesc}>
+                    Resilient local database caching for seamless data access and continuous usability offline.
+                  </p>
+                </div>
+              </div>
+
+              <div className={styles.capabilityItem}>
+                <div className={styles.capabilityIconWrap}>
+                  <Cloud size={18} color="#FFCA28" />
+                </div>
+                <div>
+                  <h4 className={styles.capabilityTitle}>Cloud & Real-Time Sync</h4>
+                  <p className={styles.capabilityDesc}>
+                    Firebase Authentication, Firestore live streams, and Supabase Storage integration for secure operations.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -94,7 +130,7 @@ export default function About() {
 
             {/* Certifications Section */}
             <div className={styles.certList}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', marginTop: '16px' }}>
                 <Award size={16} color="#005fea" />
                 <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#ffffff' }}>Professional Certifications</span>
               </div>
@@ -111,4 +147,3 @@ export default function About() {
     </section>
   );
 }
-

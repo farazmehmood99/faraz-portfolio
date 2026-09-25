@@ -6,7 +6,8 @@ import { portfolioData } from '@/data/portfolioData';
 import {
   ArrowUpRight,
   Github,
-  Linkedin
+  Linkedin,
+  FileText
 } from 'lucide-react';
 import { WhatsAppIcon, TwitterIcon } from '@/components/icons/SocialIcons';
 import gsap from 'gsap';
@@ -113,13 +114,29 @@ export function ProfileSidebar() {
         </ul>
       </div>
 
-      {/* Bot Button: Get Started Capsule with White Arrow Circle */}
-      <a href="#contact" className={styles.botButton} id="sidebar-cta-btn">
-        <span className={styles.text}>Get Started</span>
-        <div className={styles.arrowCircle}>
-          <ArrowUpRight size={20} strokeWidth={2.4} />
-        </div>
-      </a>
+      {/* Action Buttons: Download CV (Small) + Get Started */}
+      <div className={styles.sidebarActions}>
+        <a
+          href={portfolioData.personal.resumeUrl}
+          download="Faraz_Mehmood_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.cvButtonSmall}
+          id="sidebar-cv-btn"
+          aria-label="Download Faraz Mehmood Resume"
+        >
+          <FileText size={14} strokeWidth={2.2} />
+          <span>Download CV</span>
+        </a>
+
+        {/* Bot Button: Get Started Capsule with White Arrow Circle */}
+        <a href="#contact" className={styles.botButton} id="sidebar-cta-btn">
+          <span className={styles.text}>Get Started</span>
+          <div className={styles.arrowCircle}>
+            <ArrowUpRight size={20} strokeWidth={2.4} />
+          </div>
+        </a>
+      </div>
     </aside>
   );
 }
@@ -172,8 +189,7 @@ export default function Hero() {
       {/* Giant H1 Main Title */}
       <h1 ref={titleRef} className={styles.heroMainTitle}>
         Faraz Mehmood <br />
-        Software Engineer · <br />
-        Flutter & Web Development
+        Full Stack Software Engineer · <br />Flutter & Web Development
       </h1>
 
       {/* Bio Description */}
@@ -190,6 +206,26 @@ export default function Hero() {
         <li className={styles.tagPill}>Cloud & Firebase</li>
       </ul>
 
+      {/* Quick Action Buttons */}
+      <div className={styles.heroActionRow}>
+        <a
+          href={portfolioData.personal.resumeUrl}
+          download="Faraz_Mehmood_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.heroCvBtn}
+          id="hero-cv-btn"
+          aria-label="Download CV"
+        >
+          <FileText size={17} strokeWidth={2.2} />
+          <span>Download CV</span>
+        </a>
+        <a href="#works" className={styles.heroWorksBtn}>
+          <span>View Works</span>
+          <ArrowUpRight size={17} strokeWidth={2.2} />
+        </a>
+      </div>
+
       {/* Indicators: Two Giant Bento Stat Cards */}
       <div ref={indicatorsRef} className={styles.indicatorsWrap}>
         {/* Card 1: Years in Tech */}
@@ -200,14 +236,13 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Card 2: Project Success */}
-        {/* <div className={styles.indicatorCard}>
-          <div className={styles.cardTitle}>Project Success</div>
+        {/* Card 2: Completed Projects */}
+        <div className={styles.indicatorCard}>
+          <div className={styles.cardTitle}>Completed Projects</div>
           <div className={styles.cardValueWrap}>
-            <span className={styles.cardNumber}>99%</span>
+            <span className={styles.cardNumber}>8+</span>
           </div>
-        </div> */}
-        
+        </div>
       </div>
     </section>
   );

@@ -47,19 +47,24 @@
 }
 
 .bentoCard {
-  background: linear-gradient(135deg, rgba(14, 18, 28, 0.8) 0%, rgba(8, 11, 18, 0.9) 100%);
+  background: rgba(14, 20, 32, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
   padding: 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease;
 }
 
 .bentoCard:hover {
-  border-color: rgba(0, 95, 234, 0.35);
-  box-shadow: 0 12px 35px rgba(0, 95, 234, 0.15);
+  background: rgba(18, 26, 44, 0.72);
+  border-color: rgba(0, 95, 234, 0.42);
+  box-shadow: 0 16px 40px rgba(0, 95, 234, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  transform: translateY(-3px);
 }
 
 .cardHeader {
@@ -83,20 +88,55 @@
   margin-bottom: 14px;
 }
 
-.principlesGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+.capabilitiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
 }
 
-.principleItem {
+.capabilityItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  transition: all 0.25s ease;
+}
+
+.capabilityItem:hover {
+  background: rgba(0, 95, 234, 0.08);
+  border-color: rgba(0, 95, 234, 0.3);
+  transform: translateX(3px);
+}
+
+.capabilityIconWrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(0, 95, 234, 0.12);
+  border: 1px solid rgba(0, 95, 234, 0.25);
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.85rem;
-  color: #c0c9d6;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.capabilityTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 3px 0;
+}
+
+.capabilityDesc {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: #8b9bb4;
+  margin: 0;
 }
 
 .iconBox {

@@ -292,6 +292,34 @@
   transform: translateY(-2px);
 }
 
+.drawerCvWrap {
+  margin-top: 24px;
+}
+
+.drawerCvBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 20px;
+  background: linear-gradient(135deg, #005fea, #0084ff);
+  color: #ffffff;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0, 95, 234, 0.4);
+  transition: all 0.25s ease;
+}
+
+.drawerCvBtn:hover {
+  background: linear-gradient(135deg, #0066ff, #00d2ff);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 95, 234, 0.6);
+  color: #ffffff;
+}
+
 @media (max-width: 768px) {
   .rightNav {
     display: none;

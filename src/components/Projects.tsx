@@ -109,37 +109,53 @@ export default function Projects() {
               </div>
 
               <div className={styles.cardActions}>
-                {project.category === 'Mobile' ? (
-                  <span 
-                    className={styles.demoUnavailableBtn} 
-                    title="Live web demo is unavailable for native mobile applications. Available on-device or via GitHub repository."
-                  >
-                    <span>Live Demo Unavailable</span>
-                  </span>
-                ) : project.demoUrl ? (
+                {/* Deployment / Live Demo Status */}
+                {project.isDemoPublished && project.demoUrl ? (
                   <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noreferrer"
                     className={styles.demoBtn}
+                    title={`View live demo of ${project.title}`}
                   >
                     <span>Live Demo</span>
-                    <ExternalLink size={14} />
+                    <ExternalLink size={13} />
                   </a>
                 ) : (
-                  <span className={styles.demoUnavailableBtn}>
-                    <span>Live Demo Unavailable</span>
+                  <span 
+                    className={styles.notPublishedBtn} 
+                    title="Live production build / store release is not yet published"
+                  >
+                    <span className={styles.statusDotAmber} />
+                    <span>Not Published</span>
                   </span>
                 )}
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.codeBtn}
-                >
-                  <Github size={14} />
-                  <span>View Repository</span>
-                </a>
+
+                {/* View Repository Button */}
+                {project.isRepoPublished ? (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.codeBtn}
+                    title={`View ${project.title} source code repository on GitHub`}
+                  >
+                    <Github size={13} />
+                    <span>View Repo</span>
+                    <ArrowUpRight size={12} className={styles.codeArrow} />
+                  </a>
+                ) : (
+                  <a
+                    href={portfolioData.socials.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.repoPendingBtn}
+                    title="Repository in private development — click to explore Faraz's GitHub profile"
+                  >
+                    <Github size={13} />
+                    <span>Repo Pending</span>
+                  </a>
+                )}
               </div>
             </div>
           </div>

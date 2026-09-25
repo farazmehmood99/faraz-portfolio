@@ -113,13 +113,14 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
               className={styles.whatsappLink}
+              title="Click to chat directly with Faraz on WhatsApp"
             >
               <div className={styles.whatsappCircle}>
                 <WhatsAppIcon size={20} color="#25D366" />
               </div>
               <div>
-                <div className={styles.linkSublabel}>WhatsApp / Phone</div>
-                <div className={styles.linkTitle}>+92 315-4236363</div>
+                <div className={styles.linkSublabel}>Instant Messaging</div>
+                <div className={styles.linkTitle}>Direct Chat on WhatsApp</div>
               </div>
             </a>
 

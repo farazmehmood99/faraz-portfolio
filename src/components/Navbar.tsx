@@ -14,7 +14,8 @@ import {
   FolderGit2,
   ChevronRight,
   Github,
-  Linkedin
+  Linkedin,
+  FileText
 } from 'lucide-react';
 import { WhatsAppIcon, TwitterIcon } from '@/components/icons/SocialIcons';
 import styles from './Navbar.module.css';
@@ -143,6 +144,21 @@ export default function Navbar() {
                   );
                 })}
               </ul>
+
+              {/* Download CV Action Button */}
+              <div className={styles.drawerCvWrap}>
+                <a
+                  href={portfolioData.personal.resumeUrl}
+                  download="Faraz_Mehmood_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.drawerCvBtn}
+                  aria-label="Download CV"
+                >
+                  <FileText size={18} strokeWidth={2.2} />
+                  <span>Download CV</span>
+                </a>
+              </div>
             </div>
 
             {/* Social Network Links */}
