@@ -1,37 +1,50 @@
-<h1 align="center">Hi 👋, I'm Faraz Mehmood</h1>
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=005FEA&center=true&vCenter=true&width=700&lines=Hi+%F0%9F%91%8B%2C+I'm+Faraz+Mehmood;Software+Engineer;Flutter+%26+Dart+Developer;Full-Stack+Web+Engineer;Always+Learning+%F0%9F%9A%80" alt="Typing SVG" />
+</h1>
 
-<h3 align="center">Software Engineer • Flutter Mobile Apps • Modern Full-Stack Web Development</h3>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Poppins&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=700&lines=Software+Engineer;Flutter+%26+Dart+Mobile+Developer;Next.js+%26+React+Web+Engineer;Firebase+%26+Supabase+Architect" alt="Typing SVG" />
-</p>
+<h3 align="center">🚀 Software Engineer · Flutter Mobile Apps · Full-Stack Web Development</h3>
 
 <p align="center">
-  <a href="https://linkedin.com/in/faraz-mehmood-808046360">
+  <a href="https://linkedin.com/in/faraz-mehmood-808046360" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://wa.me/923154236363">
+  <a href="https://wa.me/923154236363" target="_blank">
     <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
   </a>
   <a href="mailto:farazmehmood003@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
   <a href="https://github.com/farazmehmood99" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </p>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=farazmehmood99&label=Profile%20Views&color=005fea&style=flat-square" alt="Profile Views" />
+</p>
+
 ---
 
-## 🚀 About Me
+## 👨‍💻 About Me
 
-B.S. Computer Science graduate (2020–2024) from KUST and active **Software Engineer** developing production mobile applications at **LogicCraft Technologies**, while mastering full-stack web engineering at **Arfa Karim Technology Incubator, Peshawar**.
+```dart
+class FarazMehmood extends SoftwareEngineer {
+  final String location    = "Kohat, Pakistan 🇵🇰";
+  final String university  = "KUST — B.S. Computer Science (2020–2024)";
+  final String company     = "LogicCraft Technologies";
+  final String learning    = "Arfa Karim Technology Incubator, Peshawar";
+  final String experience  = "1.5+ Years";
 
-* 📱 **Mobile App Engineering:** Specialized in building smooth 60fps cross-platform iOS & Android apps with **Flutter & Dart**, clean **MVVM** architecture, **Provider** state management, and **SQLite** local storage.
-* 🌐 **Full-Stack Web Development:** Engineering responsive, high-performance web platforms with **React 18**, **Next.js 14**, **TypeScript**, and **Tailwind CSS**.
-* ☁️ **Cloud, Databases & APIs:** Real-time data synchronization with **Firebase (Firestore & Auth)**, **Supabase Storage**, and asynchronous **REST APIs (HTTP)**.
-* 🎓 **Academic Foundation:** Solid CS grounding in Algorithms, Data Structures, OOP, and Software Design.
-* 💼 **Open to:** Software Engineering roles, cross-platform mobile projects, and full-stack web contracts.
+  final List<String> currentFocus = [
+    "Building cross-platform apps with Flutter & Dart",
+    "Engineering modern web with Next.js 14 & React 18",
+    "Cloud backends with Firebase & Supabase",
+  ];
+
+  final String contact = "farazmehmood003@gmail.com";
+  final bool   openToWork = true; // Available for new roles & projects!
+}
+```
 
 ---
 
@@ -44,17 +57,17 @@ B.S. Computer Science graduate (2020–2024) from KUST and active **Software Eng
 
 ### 📱 Mobile Development
 <p>
-  <img src="https://skillicons.dev/icons?i=flutter,androidstudio,sqlite" alt="Mobile Development" />
+  <img src="https://skillicons.dev/icons?i=flutter,androidstudio,sqlite" alt="Mobile" />
 </p>
 
-### 🌐 Frontend & Web Engineering
+### 🌐 Web Engineering
 <p>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" alt="Web Development" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" alt="Web" />
 </p>
 
-### ☁️ Backend, Cloud & Databases
+### ☁️ Cloud & Backend
 <p>
-  <img src="https://skillicons.dev/icons?i=firebase,supabase,postman" alt="Backend & Cloud" />
+  <img src="https://skillicons.dev/icons?i=firebase,supabase,postman" alt="Cloud" />
 </p>
 
 ### 🧰 Tools & Workflow
@@ -64,71 +77,104 @@ B.S. Computer Science graduate (2020–2024) from KUST and active **Software Eng
 
 ---
 
-## 🌟 Featured Projects
-
-### 📱 Mobile Applications
-
-#### 🏡 [Tenant Link Application](https://github.com/farazmehmood99/Tenant_Links) (2026)
-Modern rental and property management mobile application for landlords and tenants.
-* **Repository:** [github.com/farazmehmood99/Tenant_Links](https://github.com/farazmehmood99/Tenant_Links)
-* **Tech:** Flutter • Dart • Firebase Firestore • Firebase Auth • Supabase Storage
-* **Highlights:** Secure authentication, real-time lease tracking, and cloud document storage.
-
-#### 🏠 [RentMate — Rental Management Suite](https://github.com/farazmehmood99/RentMate1) (2025)
-Smart rental and property management application with an intuitive Flutter UI and real-time state management.
-* **Repository:** [github.com/farazmehmood99/RentMate1](https://github.com/farazmehmood99/RentMate1)
-* **Tech:** Flutter • Dart • Provider • Firebase Firestore
-* **Highlights:** Monthly rent tracking, tenant record archiving, and clean architecture.
-
-#### 🔨 Bidding Application — User & Admin Panel (2025)
-Real-time auction and bidding platform featuring dual interfaces for standard bidders and system administrators.
-* **Tech:** Flutter • Provider (MVVM) • Firebase Firestore • Supabase Storage
-* **Highlights:** Live bid streaming, media uploads, and synchronized admin dashboards.
-
-#### ☕ Kovue Coffee — Final Year Project (2024)
-Comprehensive on-demand cafe ordering and delivery ecosystem with 4 distinct user interfaces.
-* **Tech:** Flutter • Firebase • Geolocation Routing • State Management
-* **Highlights:** Dedicated mobile portals for Customer, Seller/Cafe, Rider, and Admin.
-
-#### ⛅ Live Weather Application (2025)
-Real-time meteorological monitoring app consuming live weather data over REST APIs.
-* **Tech:** Flutter • Dart • REST API (HTTP) • JSON Serialization
-
-#### 📝 Cloud-Synced To-Do Application (2025)
-High-productivity task management application with cloud synchronization and offline persistence.
-* **Tech:** Flutter • Firebase Firestore • Supabase • Local Cache
-
----
-
-### 🌐 Web & Full-Stack Platforms
-
-#### ⚡ Modern Web & SaaS Platform (2026)
-Blazing-fast responsive web application showcasing full-stack capabilities cultivated at Arfa Karim Technology Incubator.
-* **Tech:** Next.js 14 App Router • React 18 • TypeScript • Tailwind CSS
-* **Highlights:** Server actions, sub-second LCP, zero layout shift, and SEO optimization.
-
----
-
-## 📈 GitHub Analytics
+## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=farazmehmood99&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080b12&title_color=005fea&icon_color=005fea&text_color=c0c9d6" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=farazmehmood99&layout=compact&theme=tokyonight&hide_border=true&bg_color=080b12&title_color=005fea&text_color=c0c9d6" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=farazmehmood99&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=005FEA&icon_color=005FEA&text_color=C0C9D6&rank_icon=github" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=farazmehmood99&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=005FEA&text_color=C0C9D6&langs_count=8" alt="Top Languages" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=farazmehmood99&theme=tokyonight&hide_border=true&background=0D1117&stroke=005FEA&ring=005FEA&fire=FF6B35&currStreakNum=FFFFFF&sideNums=C0C9D6&currStreakLabel=005FEA&sideLabels=C0C9D6&dates=808080" alt="GitHub Streak" width="60%" />
 </p>
 
 ---
 
-## 📜 Certifications
+## 🌟 Featured Projects
 
-* 🛡️ **Introduction to Cybersecurity** — Cisco Networking Academy (2023)
-* 📱 **Cross-Platform Development with Flutter** — KPSDP (2025)
-* 🎨 **UI/UX Design for Mobile and Web** — KPSDP (2025)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🏡 Tenant Link Application</h3>
+      <p>Modern property and tenant management app with real-time Firebase Firestore sync, secure Auth, and Supabase document storage.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" />
+      </p>
+      <a href="https://github.com/farazmehmood99/Tenant_Links">
+        <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🏠 RentMate — Rental Suite</h3>
+      <p>Smart rental management with landlord/tenant record tracking, monthly rent collections, and clean Flutter MVVM architecture.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
+        <img src="https://img.shields.io/badge/Provider-005FEA?style=flat-square&logo=dart&logoColor=white" />
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+      </p>
+      <a href="https://github.com/farazmehmood99/RentMate1">
+        <img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔨 Bidding App — User & Admin</h3>
+      <p>Real-time auction and bidding platform with dual interfaces — bidder UI and admin panel with live Firebase Firestore streams.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+        <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" />
+      </p>
+      <a href="https://github.com/farazmehmood99">
+        <img src="https://img.shields.io/badge/View_Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>☕ Kovue Coffee — Final Year Project</h3>
+      <p>Flagship BS CS Final Year Project: full-scale mobile cafe ecosystem with 4 dedicated portals (Customer, Seller, Rider, Admin).</p>
+      <p>
+        <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
+        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+        <img src="https://img.shields.io/badge/Geolocation-FF6B35?style=flat-square&logo=googlemaps&logoColor=white" />
+      </p>
+      <a href="https://github.com/farazmehmood99">
+        <img src="https://img.shields.io/badge/View_Profile-181717?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 📫 Connect With Me
+## 💼 Experience
 
-<p align="left">
+| 🏢 Company | 🎯 Role | 📅 Period |
+|:---|:---|:---|
+| **LogicCraft Technologies** | Flutter & Mobile Application Developer | July 2024 – Present |
+| **Arfa Karim Technology Incubator, Peshawar** | Full Stack Development (Training) | 2026 – Present |
+
+---
+
+## 🎓 Education & Certifications
+
+| 🎓 Degree | 🏛️ Institution | 📅 Year |
+|:---|:---|:---|
+| B.S. Computer Science | Kohat University of Science & Technology (KUST) | 2020 – 2024 |
+| Full Stack Development | Arfa Karim Technology Incubator, Peshawar | 2026 – Present |
+
+**📜 Certifications:**
+- 🛡️ **Introduction to Cybersecurity** — Cisco Networking Academy (2023)
+- 📱 **Cross-Platform Development with Flutter** — KPSDP (2025)
+- 🎨 **UI/UX Design for Mobile and Web** — KPSDP (2025)
+
+---
+
+## 🤝 Let's Connect!
+
+<p align="center">
   <a href="https://wa.me/923154236363" target="_blank">
     <img src="https://img.shields.io/badge/WhatsApp-+923154236363-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
@@ -142,12 +188,10 @@ Blazing-fast responsive web application showcasing full-stack capabilities culti
 
 ---
 
-## 💬 Favorite Philosophy
-
-> **"Code with purpose, engineer for performance, and never stop building."**
-
----
+<p align="center">
+  <b>"Code with purpose, engineer for performance, and never stop building."</b>
+</p>
 
 <p align="center">
-⭐ <i>Thank you for visiting my profile! If you find my projects helpful, feel free to drop a star or connect.</i> ⭐
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=005FEA&height=80&section=footer&text=Thanks+for+visiting!&fontSize=18&fontColor=ffffff&animation=fadeIn" alt="Footer" />
 </p>
