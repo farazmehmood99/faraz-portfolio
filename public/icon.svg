@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Background Gradient: Vibrant Royal Blue to Deep Cobalt -->
+    <linearGradient id="brandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066ff" />
+      <stop offset="100%" stop-color="#0038b3" />
+    </linearGradient>
+
+    <!-- Border Gradient: Cyan Electric to Vibrant Blue -->
+    <linearGradient id="brandBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0080ff" />
+      <stop offset="100%" stop-color="#0040cc" />
+    </linearGradient>
+
+    <!-- Top Gloss/Shine Highlight -->
+    <linearGradient id="topGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Drop Shadow for Letter F -->
+    <filter id="fShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#001844" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base with Border -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#brandBg)" stroke="url(#brandBorder)" stroke-width="2.5" />
+
+  <!-- Top Curved Glass Reflection -->
+  <path d="M 2 18 C 2 9.16 9.16 2 18 2 L 46 2 C 54.84 2 62 9.16 62 18 L 62 26 C 62 26 44 21 32 21 C 20 21 2 26 2 26 Z" fill="url(#topGlow)" />
+
+  <!-- Subtle Radial Spotlight in Center -->
+  <circle cx="32" cy="28" r="20" fill="#00d2ff" opacity="0.22" filter="blur(4px)" />
+
+  <!-- Bold, Clean, Modern 'F' Letter (Pixel-Sharp Path) -->
+  <path filter="url(#fShadow)" fill="#ffffff" d="M 21 17 C 21 16.45 21.45 16 22 16 H 43.5 C 44.33 16 45 16.67 45 17.5 V 23.5 C 45 24.33 44.33 25 43.5 25 H 29.5 V 30.5 H 39.5 C 40.33 30.5 41 31.17 41 32 V 37 C 41 37.83 40.33 38.5 39.5 38.5 H 29.5 V 47 C 29.5 47.55 29.05 48 28.5 48 H 22 C 21.45 48 21 47.55 21 47 Z" />
+</svg>

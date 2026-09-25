@@ -1,0 +1,120 @@
+/* Tech Stack Grid Component Styles */
+.section {
+  margin-bottom: 80px;
+}
+
+.dotBefore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: #8b9bb4;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.dotBefore::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary, #005fea);
+  box-shadow: 0 0 10px var(--primary, #005fea);
+}
+
+.heading {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.filterTabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.filterTab {
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.filterTab:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.filterTabActive {
+  background: #005fea !important;
+  color: #ffffff !important;
+  border-color: #005fea !important;
+  box-shadow: 0 4px 14px rgba(0, 95, 234, 0.4);
+}
+
+.techStackGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.techCard {
+  background: rgba(14, 18, 28, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.25s ease;
+}
+
+.techCard:hover {
+  background: rgba(18, 24, 38, 0.9);
+  border-color: rgba(0, 95, 234, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 95, 234, 0.15);
+}
+
+.iconBox {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconImg {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.techInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.techName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.techLevel {
+  font-size: 0.78rem;
+  color: #8b9bb4;
+}

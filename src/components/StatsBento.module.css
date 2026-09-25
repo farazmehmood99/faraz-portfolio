@@ -1,0 +1,132 @@
+/* Experience & Selected Work Banner Styles */
+.wrapper {
+  margin-top: 40px;
+}
+
+.sectionExperiences {
+  margin-bottom: 70px;
+}
+
+.dotBefore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: #8b9bb4;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.dotBefore::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary, #005fea);
+  box-shadow: 0 0 10px var(--primary, #005fea);
+}
+
+.heading {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.35;
+  color: #ffffff;
+  margin-bottom: 36px;
+  max-width: 750px;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease;
+}
+
+.experienceItem:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experienceItem:hover {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(0, 95, 234, 0.35);
+}
+
+.company {
+  font-size: 0.88rem;
+  color: #8b9bb4;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.timelineBadge {
+  font-size: 0.82rem;
+  color: #70b0ff;
+  background: rgba(0, 95, 234, 0.12);
+  border: 1px solid rgba(0, 95, 234, 0.3);
+  padding: 4px 14px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+/* Continuous Marquee Banner */
+.bannerMarqueeTrack {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 32px;
+  margin: 60px 0 80px 0;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.bannerMarqueeGroup {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+  min-width: 100%;
+  animation: scrollMarquee 26s linear infinite;
+}
+
+@keyframes scrollMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.bannerText {
+  font-family: var(--font-heading, sans-serif);
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.dotCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #005fea;
+  box-shadow: 0 0 14px #005fea;
+  display: inline-block;
+}

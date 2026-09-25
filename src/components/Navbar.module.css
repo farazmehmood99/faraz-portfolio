@@ -1,0 +1,299 @@
+/* Navbar & Quick Navigation Styles */
+.tfBtnMenu {
+  position: fixed;
+  top: 24px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(14, 18, 28, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tfBtnMenu:hover {
+  background: rgba(0, 95, 234, 0.2);
+  border-color: rgba(0, 95, 234, 0.6);
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 95, 234, 0.4);
+}
+
+/* Far-Right Floating Vertical Icon Dock */
+.rightNav {
+  position: fixed;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(14, 18, 28, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 36px;
+  padding: 14px 10px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 90;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  list-style: none !important;
+  margin: 0;
+}
+
+.rightNav li {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.rightNav a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b9bb4;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.25s ease;
+  background: transparent;
+}
+
+.rightNav a:hover,
+.rightNav a.active {
+  color: #ffffff;
+  background: rgba(0, 95, 234, 0.2);
+  box-shadow: 0 0 15px rgba(0, 95, 234, 0.45);
+}
+
+.rightNav a.active {
+  background: #005fea;
+  color: #ffffff;
+}
+
+.navTooltip {
+  position: absolute;
+  right: calc(100% + 14px);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 12px;
+  border-radius: 8px;
+  background: #141824;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.rightNav a:hover .navTooltip {
+  opacity: 1;
+  transform: translateY(-50%) translateX(-4px);
+}
+
+/* Floating Bottom-Right WhatsApp Button */
+.floatingWhatsappBtn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 95;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  text-decoration: none;
+}
+
+.floatingWhatsappBtn:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+  color: #ffffff;
+}
+
+/* Slide-out Off-Canvas Drawer Menu */
+.drawerWrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drawerBackdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.drawerPanel {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 100%;
+  background: linear-gradient(180deg, #0b0f1a 0%, #060810 100%);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -20px 0 50px rgba(0, 0, 0, 0.85);
+  overflow-y: auto;
+  z-index: 2;
+  animation: slideInRight 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.drawerTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.drawerTitle::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+}
+
+.drawerCloseBtn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.drawerCloseBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: rotate(90deg);
+}
+
+.drawerNavList {
+  list-style: none !important;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.drawerNavList li {
+  list-style: none !important;
+}
+
+.drawerNavLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #8b9bb4;
+  background: transparent;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 1.02rem;
+  transition: all 0.2s ease;
+}
+
+.drawerNavLink:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.drawerNavLinkActive {
+  color: #ffffff;
+  background: rgba(0, 95, 234, 0.15);
+  border: 1px solid rgba(0, 95, 234, 0.4);
+  font-weight: 600;
+}
+
+.drawerNavLinkLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.drawerFooter {
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.drawerSocials {
+  display: flex;
+  gap: 12px;
+}
+
+.drawerSocialBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.drawerSocialBtn:hover {
+  background: rgba(0, 95, 234, 0.2);
+  border-color: rgba(0, 95, 234, 0.5);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .rightNav {
+    display: none;
+  }
+}

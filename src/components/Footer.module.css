@@ -1,0 +1,62 @@
+/* Footer Component Styles */
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 32px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.copyright {
+  font-size: 0.88rem;
+  color: #8b9bb4;
+}
+
+.copyright strong {
+  color: #ffffff;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.socialLink {
+  color: #8b9bb4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.socialLink:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.scrollTopBtn {
+  margin-left: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scrollTopBtn:hover {
+  background: rgba(0, 95, 234, 0.2);
+  border-color: rgba(0, 95, 234, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 95, 234, 0.35);
+}

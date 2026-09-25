@@ -1,0 +1,241 @@
+/* Selected Works & Projects Showcase Styles */
+.section {
+  margin-bottom: 80px;
+}
+
+/* Showcase CTA Card (tatheer.dev style) */
+.ctaCard {
+  background: linear-gradient(135deg, rgba(14, 18, 28, 0.95) 0%, rgba(8, 11, 18, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  padding: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.ctaCard:hover {
+  border-color: rgba(0, 95, 234, 0.4);
+  box-shadow: 0 20px 60px rgba(0, 95, 234, 0.2);
+}
+
+.ctaPill {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 9999px;
+  background: rgba(0, 95, 234, 0.12);
+  border: 1px solid rgba(0, 95, 234, 0.3);
+  color: #70b0ff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.ctaTitle {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.ctaDesc {
+  color: #8b9bb4;
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 650px;
+  margin-bottom: 24px;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.ctaLink:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* Filter Tabs */
+.filterTabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.filterTab {
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  cursor: pointer;
+}
+
+.filterTab:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.filterTabActive {
+  background: #005fea !important;
+  color: #ffffff !important;
+  border-color: #005fea !important;
+  box-shadow: 0 4px 18px rgba(0, 95, 234, 0.45);
+}
+
+.filterTabCount {
+  margin-left: 6px;
+  font-size: 0.78rem;
+  opacity: 0.75;
+}
+
+/* Projects Grid */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.projectCard {
+  background: linear-gradient(135deg, rgba(14, 18, 28, 0.8) 0%, rgba(8, 11, 18, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  border-color: rgba(0, 95, 234, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 95, 234, 0.15);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.categoryTag {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(0, 95, 234, 0.12);
+  color: #70b0ff;
+  border: 1px solid rgba(0, 95, 234, 0.25);
+}
+
+.metricsTag {
+  font-size: 0.78rem;
+  color: #8b9bb4;
+  font-weight: 500;
+}
+
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.projectDesc {
+  font-size: 0.92rem;
+  color: #8b9bb4;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.techStackWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.techTag {
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 0.78rem;
+  color: #c0c9d6;
+}
+
+.cardActions {
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 16px;
+}
+
+.demoBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  background: #005fea;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.demoBtn:hover {
+  background: #1a75ff;
+  box-shadow: 0 4px 14px rgba(0, 95, 234, 0.4);
+}
+
+.codeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: #8b9bb4;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  transition: all 0.2s ease;
+}
+
+.codeBtn:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.demoUnavailableBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #728096;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  cursor: not-allowed;
+  user-select: none;
+}
+
